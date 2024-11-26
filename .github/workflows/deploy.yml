@@ -25,7 +25,7 @@ jobs:
       # Paso 3: Desplegar los archivos a la instancia EC2
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@3.91.152.216 << 'EOF'
+          ssh -o StrictHostKeyChecking=no ec2-user@54.210.242.135 << 'EOF'
             cd /home/ec2-user/Ec2HtmlYml
             git pull origin main  # Actualizar los archivos del repositorio
             sudo cp index.html /var/www/html/  # Copiar index.html al directorio de Nginx
